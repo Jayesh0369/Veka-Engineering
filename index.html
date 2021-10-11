@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEKA ENGINEERING</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>  
+    <section  class="header">
+        <nav>
+            <a href="index.html"><img src="/images/111.jpeg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">PRODUCT</a></li>
+                    <li><a href="">CERTIFICATE</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+
+        </nav>
+<div class="text-box">
+    <h1>One Stop Shop</h1>
+    <h2>VEKA ENGINEERING</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <a href="" class="hero-btn">Visit Us to Know More</a>
+</div>
+    </section>
+
+<!------ Product ------>
+<section class="product">
+    <h1>We are Providing Products</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, praesentium? Explicabo distinctio, ut ipsa autem assumenda perferendis fuga sed quis excepturi voluptatibus aspernatur, iusto necessitatibus. Amet, magni aut. Repudiandae, quae!</p>
+</section>
+
+
+<!------JavaScript for Toggle Menu------>
+
+<script>
+    var navLinks = document.getElementById("navLinks")
+    function showmenu(){
+        navLinks.style.right = "0";
+    }
+    function hidemenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>    
+</body>
+</html>
