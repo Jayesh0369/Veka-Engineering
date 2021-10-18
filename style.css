@@ -19,7 +19,8 @@ nav{
 }
 nav img{
     width: 100px;
-}
+    
+    box-shadow: 5px 5px 5px 5px rgba(247, 250, 252, 0.8);
 }
 .nav-links{
     flex: 1;
@@ -117,14 +118,322 @@ nav .fa{
     .nav-links ul{
         padding: 20px;
     }
+    nav img{
+        width: 80px;
+        height: 80px;
+        margin-top: 5px;
+        margin-left: 5px;
+        padding: 0;
+    }
 }
 
 /*----- Product -----*/
-
 .product{
-    width: 80px;
-    margin: auto;
-    text-align: right ;
+    text-align: center ;
     padding-top: 50px;
+    color: #1c658a;
 }
- 
+.row{
+    margin-top: 3%;
+    display: flex;
+    padding-left: 60px;
+    padding-right: 60px;
+    justify-content: space-between;
+}
+.product-col{
+    flex-basis: 31%;
+    background: #c7d6d6;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    transition: 0.8s;
+}
+.product-col img{
+    margin-left: 80px;
+}
+.products-col img{
+    margin-left: 80px;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.product-col:hover{
+    box-shadow: 0 0 20px 0px rgba(122, 23, 23, 0.8);
+}
+.rows{
+    margin-top: 0.5%;
+    display: flex;
+    padding-left: 60px;
+    padding-right: 60px;
+    justify-content: space-between;
+}
+.products-col{
+    flex-basis: 31%;
+    background: #c7d6d6;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    transition: 0.8s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.products-col:hover{
+    box-shadow: 0 0 20px 0px rgba(15, 84, 116, 0.8);
+}
+@media(max-width: 700px){
+    .product{
+        padding: 0px;
+    }
+    .product h1{
+        padding: 0px;
+        margin-top: 50px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .product-col img{
+        margin-left: 0.5px;
+        height: 200px;
+        width: 250px;
+    }
+}
+@media(max-width: 700px){
+    .rows{
+        flex-direction: column;
+    }
+    .products-col img{
+        margin-left: 0.5px;
+        height: 200px;
+        width: 250px;
+    }
+}
+/*----- container -----*/
+.container{ 
+    margin: auto;
+    padding: 80px; 
+    margin-bottom: 200px; 
+}
+img{
+    margin-left: auto;
+    float: left;
+    padding: 0 0px 0 0;
+    border-radius: 12PX;
+}
+.text h1{
+    margin-top: 150px;
+    color: teal;
+    text-align: center;
+}
+.text h2{
+    color: rgb(128, 69, 59);
+    text-align: center;
+}
+.text p{
+    color: teal;
+    text-align: center;
+}
+@media(max-width: 700px){
+    .container{
+        margin-bottom: -200px; 
+    }
+    img{
+        margin-left: -27.5px;
+        height: 200px;
+        width: 250px;
+    }
+    h1{
+        padding-top: 80PX;
+        font-size: 18px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    p{
+        font-size: 14px;
+        margin: 10px -24px; 
+    }
+}
+/*----- offer -----*/
+.offer{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.offer-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.offer-col img{
+    margin: auto;
+    margin-left: 60px;
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    padding: 0px;
+}
+.offer-col p{
+    margin: auto;
+    text-align: center;
+    padding: 10;
+}
+.offer-col h3{
+    margin: auto;
+    text-align: center;
+}
+@media(max-width: 700px){
+    .offer p{
+        margin-bottom: 30px;
+    }
+    .offer-col img{
+        margin-left: -16.5px;
+        height: 150px;
+        width: 200px;
+    }
+    .offer-col h3{
+        font-size: 16px;
+    }
+    .offer-col p{
+        font-size: 14px;
+        margin: 10px -24px; 
+    }
+}
+/*----- testimonial -----*/
+.testimonial{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.testimonial-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: rgb(204, 232, 240);
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.testimonial-col img{
+    height: 70px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.testimonial-col p{
+    padding: 0;
+}
+.testimonial-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+.testimonial-col .fa{
+    color: rgb(236, 110, 110);
+}
+@media(max-width: 700px){
+    .testimonial .row{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .testimonial{
+        padding: 0px;
+    }
+    .testimonial img{
+        margin-top: -10px;
+        margin-left: -10px;
+    }
+    .testimonial-col p{
+        margin-top: -10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;   
+    }
+    .testimonial h1{
+        padding: 0px;
+        margin-top: 50px;
+    }
+    .testimonial h3{
+        margin-left: 0px;
+    }
+}
+/*----- contact us -----*/
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div .fa{
+    font-size: 28px;
+    color: #f44336;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-col div p{
+    padding: 0px;
+}
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.contact-col button{
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+@media(max-width: 700px){
+    .contact-us .row{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 30px;
+    }
+    .contact-col div{
+        margin-bottom: 20px;
+    }
+    .contact-col div .fa{
+        font-size: 20px;
+    }
+    .contact-col div h5{
+        font-size: 16px;
+    margin-bottom: 0px;
+    }
+    .contact-col div p{
+        font-size: 14px;
+        margin-left: 0px;
+    }
+    .contact-col input, .contact-col textarea{
+        width: 90%; 
+    }
+    .contact-col button{
+        margin-left: 61.5px;
+        
+    }
+}
