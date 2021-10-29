@@ -143,7 +143,7 @@ nav .fa{
     justify-content: space-between;
 }
 .product-col{
-    background: #c2d3bb;
+    background: #b7d2fa;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 0px;
@@ -167,9 +167,9 @@ nav .fa{
 .product-col:hover{
     border-block-start-style: ridge;
     border-block-end-style: ridge;
-    border-color: rgb(109, 168, 97);
+    border-color: rgb(103, 125, 173);
     transition: 0.3s;
-    box-shadow: 0px 0px 10px 0px rgba(139, 179, 135, 0.8);
+    box-shadow: 0px 0px 10px 0px rgba(135, 149, 179, 0.8);
 }
 .rows{
     margin-top: 3%;
@@ -179,7 +179,7 @@ nav .fa{
     justify-content: space-between;
 }
 .products-col{
-    background: #c2d3bb;
+    background: #b7d2fa;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 0px;
@@ -197,13 +197,17 @@ nav .fa{
 .products-col:hover{
     border-block-start-style: ridge;
     border-block-end-style: ridge;
-    border-color: rgb(109, 168, 97);
+    border-color: rgb(103, 125, 173);
     transition: 0.3s;
-    box-shadow: 0px 0px 10px 0px rgba(139, 179, 135, 0.8);
+    box-shadow: 0px 0px 10px 0px rgba(135, 149, 179, 0.8);
 }
 @media(max-width: 700px){
     .product{
         padding: 0px;
+    }
+    .product .row .product-col{
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
     .product h1{
         padding: 0px;
@@ -211,21 +215,34 @@ nav .fa{
     }
     .row{
         flex-direction: column;
+        padding: 0px 40px 0px 40px;
+        margin-top: 20px;
     }
     .product-col img{
-        margin-left: 0.5px;
+        margin-left: 15px;
+        margin-right: 15px;
         height: 200px;
         width: 250px;
     }
-}
-@media(max-width: 700px){
+    .product-col p{
+        margin-top: 220px;
+    }
+    .product .rows .products-col{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
     .rows{
         flex-direction: column;
+        padding: 0px 40px 0px 40px;
     }
     .products-col img{
-        margin-left: 0.5px;
+        margin-left: 15px;
+        margin-right: 15px;
         height: 200px;
         width: 250px;
+    }
+    .products-col p{
+        margin-top: 220px;
     }
 }
 /*----- container -----*/
@@ -237,28 +254,32 @@ nav .fa{
 img{
     margin-left: auto;
     float: left;
+    
     padding: 0 0px 0 0;
     border-radius: 12PX;
 }
 .text h1{
     margin-top: 150px;
-    color: teal;
+    color: rgba(6, 135, 139, 0.678);
     text-align: center;
 }
 .text h2{
-    color: rgb(128, 69, 59);
+    color: rgb(10, 124, 124);
     text-align: center;
 }
 .text p{
-    color: teal;
+    color: rgb(9, 53, 53);
     text-align: center;
 }
 @media(max-width: 700px){
     .container{
-        margin-bottom: -200px; 
+        margin: 0px;
+        padding-top: 50px;
+        padding-bottom: 50px; 
+        background-color: #eef3f5;
     }
-    img{
-        margin-left: -27.5px;
+    .container img{
+        margin-left: -25px; 
         height: 200px;
         width: 250px;
     }
@@ -289,6 +310,7 @@ img{
 .offer-col img{
     margin: auto;
     margin-left: 60px;
+    margin-right: 60px;
     width: 200px;
     height: 150px;
     border-radius: 10px;
@@ -304,11 +326,18 @@ img{
     text-align: center;
 }
 @media(max-width: 700px){
+    .offer{
+        padding-top: 50px;
+    }
+    .offer h1{
+        padding-top: 0px;
+    }
     .offer p{
-        margin-bottom: 30px;
+      padding-left: 40px;
+      padding-right: 40px;
     }
     .offer-col img{
-        margin-left: -16.5px;
+        margin-left: 40px;
         height: 150px;
         width: 200px;
     }
@@ -379,7 +408,7 @@ img{
     }
     .testimonial h1{
         padding: 0px;
-        margin-top: 50px;
+        margin-top: 30px;
     }
     .testimonial h3{
         margin-left: 0px;
@@ -394,7 +423,7 @@ img{
     flex-basis: 48%;
 }
 .contact-us .row .contact-col h1{
-    color: #f44336;
+    color: #07143f;
 }
 .contact-us .row{
     padding-left: 100px;
@@ -438,6 +467,7 @@ img{
         padding-left: 0px;
         padding-right: 0px;
         margin-top: 30px;
+        margin-bottom: 20px;
     }
     .contact-col div{
         margin-bottom: 20px;
@@ -458,6 +488,10 @@ img{
     }
     .contact-col button{
         margin-left: 61.5px;
+    }
+    .contact-col h1{
+        padding-top: 20px;
+        text-align: center;
     }
 }
 /*----- Footer -----*/
@@ -489,6 +523,7 @@ img{
     margin: auto;
     padding: 120px;
     margin-bottom: 0px;
+    padding-bottom: 30px;
 }
 .footer .container .row{
     padding-left: 75px;
@@ -545,7 +580,7 @@ ul{
     display: inline-block;
     height: 40px;
     width: 40px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(252, 250, 250, 0.2);
     margin: 0 10px 10px 0;
     text-align: center;
     line-height: 40px;
@@ -558,6 +593,17 @@ ul{
     color: #24262b;
     background-color: #ffffff;
     align-items: left;
+}
+.footer-bottom{
+    background-color: #384b4b;
+    size: 10px;
+    flex-basis: auto;
+    padding: 0px;
+    margin-top: 0px;
+}
+.footer-bottom .container{
+    padding: 30px 100px 30px 100px;
+    text-align: center;
 }
 @media(max-width: 700px){
     .footer img{
@@ -598,8 +644,7 @@ ul{
 }
 @media(max-width: 700px){
     .footer-col .social-links a{
-        flex-wrap: wrap;
-        flex-direction: row;
+       
     }
 }
 
