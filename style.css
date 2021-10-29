@@ -606,43 +606,39 @@ ul{
     text-align: center;
 }
 @media(max-width: 700px){
+    .footer .container{
+        background-color: #425353;
+    }
+    .footer-bottom .container{
+        background-color: #384b4b;
+    }
     .footer img{
         margin-top: 20px;
         margin-left: 130px;
     }
-}
-@media(max-width: 700px){
     .footer .container h1{
         margin-top: 0px;
         margin-left: 106px;
         padding-top: 0px;
         font-size: 16px;
     }
-}
-@media(max-width: 700px){
     .footer .container p{
         margin-bottom: 0px;
         margin-left: 115px;
         font-size: 12px;
     }
-}
-@media(max-width: 700px){
     .footer .container{
         padding-left: 0px;
         padding-right: 0px;
         padding-bottom: 10px;
         margin-left: 0px;
     }
-}
-@media(max-width: 700px){
     .footer .row{
         margin-top: 10px;
         padding: 0px;
         align-items: center;
         text-align: center;
     }
-}
-@media(max-width: 700px){
     .footer-col .social-links a{
        
     }
